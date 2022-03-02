@@ -19,8 +19,6 @@ basic.forever(function () {
                     . . . . .
                     `)
                 maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CCW, 50)
-                basic.pause(100)
-                maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 50)
             } else {
                 basic.showLeds(`
                     . . # . .
@@ -32,7 +30,6 @@ basic.forever(function () {
                 maqueen.motorStop(maqueen.Motors.All)
                 maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOff)
                 maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOn)
-                basic.pause(100)
                 maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 100)
             }
         } else {
